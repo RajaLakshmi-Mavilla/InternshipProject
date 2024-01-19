@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function () {
 let todoItemsContainer = document.getElementById("todoItemsContainer");
 let addTodoButton = document.getElementById("addTodoButton");
 let saveTodoButton = document.getElementById("saveTodoButton");
@@ -34,6 +35,7 @@ function onAddTodo() {
         text: userInputValue,
         uniqueNo: todosCount,
         isChecked: false
+        console.log(isChecked);
     };
     todoList.push(newTodo);
     createAndAppendTodo(newTodo);
@@ -137,4 +139,4 @@ function createAndAppendTodo(todo) {
 
 for (let todo of todoList) {
     createAndAppendTodo(todo);
-}
+}}
