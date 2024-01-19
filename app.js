@@ -35,7 +35,7 @@ function onAddTodo() {
         text: userInputValue,
         uniqueNo: todosCount,
         isChecked: false
-        console.log(isChecked);
+        
     };
     todoList.push(newTodo);
     createAndAppendTodo(newTodo);
